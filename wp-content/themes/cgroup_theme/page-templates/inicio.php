@@ -13,9 +13,13 @@ $images = get_field( 'slider_home' );
 		<div class="video-about">
 			<iframe src="https://player.vimeo.com/video/293869854" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 		</div>
-		<div class="text-about row justify-content-end">
-			<h2 class="bold text-uppercase"><?php echo $g1[ 'title' ]; ?></h2>
-			<p class="regular"><?php echo $g1[ 'description' ]; ?></p>
+		<div class="row justify-content-end">
+			<div class="col-12 col-lg-6">
+				<div class="text-about">
+					<h2 class="bold text-uppercase"><?php echo $g1[ 'title' ]; ?></h2>
+					<p class="regular"><?php echo $g1[ 'description' ]; ?></p>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>

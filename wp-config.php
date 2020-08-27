@@ -16,17 +16,17 @@
 
 // ** Ajustes de MySQL. Solicita estos datos a tu proveedor de alojamiento web. ** //
 /** El nombre de tu base de datos de WordPress */
-define( 'DB_NAME', 'furfrilo' );
-
+// define( 'DB_NAME', 'furfrilo' );
+define('DB_NAME', $_SERVER['DB_NAME']);
 /** Tu nombre de usuario de MySQL */
-define( 'DB_USER', 'furfrilo_user' );
-
+// define( 'DB_USER', 'furfrilo_user' );
+define('DB_USER', $_SERVER['DB_USER']);
 /** Tu contraseña de MySQL */
-define( 'DB_PASSWORD', 'mv2fGIsNJs39cKf7' );
-
+// define( 'DB_PASSWORD', 'mv2fGIsNJs39cKf7' );
+define('DB_PASSWORD', $_SERVER['DB_PASS']);
 /** Host de MySQL (es muy probable que no necesites cambiarlo) */
-define( 'DB_HOST', 'localhost' );
-
+// define( 'DB_HOST', 'localhost' );
+define('DB_HOST', $_SERVER['DB_HOST']);
 /** Codificación de caracteres para la base de datos. */
 define( 'DB_CHARSET', 'utf8mb4' );
 
@@ -71,6 +71,8 @@ $table_prefix = 'wp_';
  */
 define('WP_DEBUG', false);
 
+define("WP_SITEURL", "http://" . $_SERVER["HTTP_HOST"]);
+define("WP_HOME", "http://" . $_SERVER["HTTP_HOST"]);
 /* ¡Eso es todo, deja de editar! Feliz blogging */
 
 /** WordPress absolute path to the Wordpress directory. */

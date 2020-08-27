@@ -9,13 +9,15 @@ $images = get_field( 'slider_home' );
 
 </section>
 <section id="promise">
+	<div class="container">
 		<div class="video-about">
 			<iframe src="https://player.vimeo.com/video/293869854" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 		</div>
-		<div class="text-about">
+		<div class="text-about row justify-content-end">
 			<h2 class="bold text-uppercase"><?php echo $g1[ 'title' ]; ?></h2>
 			<p class="regular"><?php echo $g1[ 'description' ]; ?></p>
 		</div>
+	</div>
 </section>
 <section id="services-home" class="py-5">
 	<div class="container-fluid">

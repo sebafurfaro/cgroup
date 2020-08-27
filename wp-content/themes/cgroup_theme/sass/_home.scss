@@ -30,7 +30,7 @@
 .box-img {
 	position: relative;
 	overflow:hidden;
-	height:calc( #{$h} * 5 );
+	height:calc( #{$h} * 6 );
 	img {
 		opacity: .8;
 		transition:transform 5s ease-in-out;

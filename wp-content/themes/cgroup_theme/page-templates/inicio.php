@@ -49,14 +49,14 @@ $images = get_field( 'slider_home' );
 	</div>
 </section>
 <section id="who-home">
+	<div class="container-fluid">
 	<img src="<?php echo $g2[ 'img_left' ];?>" alt="" class="img-fluig img-left">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6 col-12">
-				<h2 class="regular heading text-uppercase"><?php echo $g2[ 'title' ];?></h2>
-				<h2 class="bold subheading text-uppercase ml-4"><?php echo $g2[ 'subtitle' ]; ?></h2>
-				<p class="description my-4"><?php echo $g2[ 'description' ]; ?></p>
-				<a href="/nosotros/" class="btn btn-custom text-white mb-0 ml-4"><?php echo $g2[ 'btn_name' ];?></a>
+		<div class="row justify-content-end">
+			<div class="col-lg-7 col-12 box">
+				<h2 class="regular heading text-uppercase mb-0"><?php echo $g2[ 'title' ];?></h2>
+				<h2 class="bold subheading text-uppercase"><?php echo $g2[ 'subtitle' ]; ?></h2>
+				<p class="description mb-0"><?php echo $g2[ 'description' ]; ?></p>
+				<a href="/nosotros/" class="btn btn-custom text-white"><?php echo $g2[ 'btn_name' ];?></a>
 			</div>
 		</div>
 	</div>

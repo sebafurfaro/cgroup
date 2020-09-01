@@ -21,6 +21,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/swiper-bundle.min.css">
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body <?php body_class(); ?> <?php understrap_body_attributes(); ?>>

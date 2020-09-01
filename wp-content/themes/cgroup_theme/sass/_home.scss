@@ -45,3 +45,46 @@
 		z-index: 10;
 	}
 }
+
+#who-home {
+	position: relative;
+	background-color:$secondary-color;
+	overflow: hidden;
+	.img-left {
+		position: absolute;
+		left:0;
+		max-width:520px;
+		object-fit: cover;
+	}
+	.heading {
+		font-size:23px;
+		line-height: 35px;
+		font-weight: $fMedium;
+		color:$primary-color;
+		letter-spacing: 3px;
+	}
+	.subheading {
+		font-size: 28px;
+		line-height: 42px;
+		font-weight: $fBold;
+		color:$white;
+		letter-spacing: 2px;
+		margin:1rem 0 1rem 5rem;
+	}
+	.description {
+		font-size: 17px;
+		line-height: normal;
+		font-weight: $fLight;
+		color:$white;
+	}
+	.btn-custom {
+		margin:1rem 0 1rem 5rem;
+	}
+	.box {
+		padding:4rem 0;
+	}
+}
+.btn-custom {
+	background-color:$feature-color;
+	border-radius: 0;
+}

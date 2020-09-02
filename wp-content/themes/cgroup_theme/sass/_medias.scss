@@ -1,0 +1,10 @@
+@media (min-width:768px) {
+	#slider-home {
+		.swiper-button-next {
+			right:-20px;
+		}
+		.swiper-button-prev {
+			left:-20px;
+		}
+	}
+}

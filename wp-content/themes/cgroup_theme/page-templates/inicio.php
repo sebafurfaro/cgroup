@@ -62,7 +62,7 @@ $images = get_field( 'slider_home' );
 	</div>
 </section>
 <?php if( $images ) : ?>
-<section id="slider-home">
+<section id="slider-home" class="d-flex align-items-center justify-content-center">
 	<div class="container">
 		<div class="row d-flex align-items-center justify-content-center">
 			<div class="col-12 col-lg-10">
@@ -75,6 +75,8 @@ $images = get_field( 'slider_home' );
 						<?php endforeach; ?>
 					</div>
 				</div>
+				<div class="swiper-button-next button-slider"></div>
+				<div class="swiper-button-prev button-slider"></div>
 			</div>
 		</div>
 	</div>

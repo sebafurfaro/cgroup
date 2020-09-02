@@ -60,7 +60,7 @@
 		font-size:23px;
 		line-height: 35px;
 		font-weight: $fMedium;
-		color:$primary-color;
+		color:$third-color;
 		letter-spacing: 3px;
 	}
 	.subheading {
@@ -78,7 +78,13 @@
 		color:$white;
 	}
 	.btn-custom {
-		margin:1rem 0 1rem 5rem;
+		margin:1.5rem 0 1rem 5rem;
+		min-width: 217px;
+		transition:transform $shortMove;
+		-webkit-transition:transform $shortMove;
+		&:hover {
+			transform: scale(1.1);
+		}
 	}
 	.box {
 		padding:4rem 0;
@@ -87,4 +93,27 @@
 .btn-custom {
 	background-color:$feature-color;
 	border-radius: 0;
+}
+
+#slider-home {
+	position: relative;
+	min-height: $h100;
+	&::before {
+		content:'';
+		display: block;
+		width: $w100;
+		height:400px;
+		background-color:$secondary-color;
+		position: absolute;
+		left:0;
+		bottom:30px;
+	}
+	#sliderHome {
+		height:500px;
+		.swiper-button-next {
+			&::after {
+				color:$white;
+			}
+		}
+	}
 }

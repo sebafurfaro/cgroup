@@ -85,7 +85,7 @@ $(document).ready(function() {
 		loop:true,
 		navigation: {
 			nextEl: '.swiper-button-next',
-			prevel: '.swiper-button-prev',
+			prevEl: '.swiper-button-prev',
 		},
 	});
 	// slider nosotros multislides

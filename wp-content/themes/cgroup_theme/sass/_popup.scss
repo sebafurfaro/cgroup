@@ -1,0 +1,38 @@
+.popup {
+	position:fixed;
+	top:0;
+	right:-100%;
+	width:$w100;
+	height:$w100;
+	background:rgba(0,0,0,.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction:column;
+	z-index: 2000;
+	.hidePopup {
+		position: relative;
+		width: $finger;
+		height:$finger;
+		align-self:flex-end;
+		background:transparent;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border:none;
+		&::after, &::before {
+			content:'';
+			display: block;
+			position: absolute;
+			width: 3px;
+			height: calc( #{$finger} - 18px );
+			background:$white;
+		}
+		&::after {
+			transform:rotate(45deg);
+		}
+		&::before {
+			transform:rotate(-45deg);
+		}
+	}
+}

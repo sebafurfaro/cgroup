@@ -1,6 +1,23 @@
 #video-home {
 	height:$h100;
-	background-image:url('../img/back1.jpg');
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	#playModal {
+		position: relative;
+		width: $finger;
+		height: $finger;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border:none;
+		background:transparent;
+		z-index: 12;
+		i {
+			font-size: calc( #{$size-base} * 2);
+			color:$black;
+		}
+	}
 }
 #promise {
 	position: relative;

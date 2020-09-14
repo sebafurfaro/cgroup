@@ -5,8 +5,12 @@ body {
 	min-height: $h100;
 	font-family: $font-base;
 }
+.popup-open {
+	overflow-y: hidden;
+}
 :focus {
-	outline:0;
+	outline:0 !important;
+	box-shadow:none
 }
 a:hover {
 	text-decoration: none;

@@ -1,3 +1,4 @@
+const body = document.getElementsByTagName('body')[0];
 const nav = document.querySelector('#mainNavbar');
 const btnMenu = document.querySelector('#menuToggler');
 
@@ -31,6 +32,29 @@ if( screen.width >= 768 ) {
 function toggleTween(tween) {
 	tween.reversed() ? tween.play() : tween.reverse();
 }
+
+// show/hide function custom modal video
+const videoModal = document.getElementById('videopopup');
+var showPopup1 = document.getElementById('playModal');
+var hidePopup1 = document.getElementById('hidePopup');
+var videoPopup = new TimelineLite();
+
+function showModalVideo() {
+	body.classList.add('popup-open');
+	videoPopup.to(
+		videoModal,
+		{right:'0%', autoAlpha:1}
+	)
+}
+function hideModalVideo() {
+	body.classList.remove('popup-open');
+	videoPopup.to(
+		videoModal,
+		{right:'-100%', autoAlpha:0}
+	)
+}
+
+
 
 // change background navbar on scroll
 var scrollpos = window.scrollY;

@@ -1,12 +1,25 @@
 <?php /* template name: inicio */
-get_header(); 
+get_header();
 
 $g1 = get_field( 'grupo1' );
 $g2 = get_field( 'grupo-2' );
 $images = get_field( 'slider_home' );
 ?>
-<section id="video-home" class="bg-full">
-
+<section id="video-home">
+	<div id="videoBg">
+		<div class="video-foreground">
+			<iframe
+				src="https://player.vimeo.com/video/374908207?background=1&autoplay=1&loop=1&byline=0&title=0"
+				frameborder="0"
+				allow="autoplay; fullscreen"
+				allowfullscreen
+				webkitallowfullscreen>
+			</iframe>
+		</div>
+	</div>
+	<button id="playModal" type="button" onclick="showModalVideo()">
+		<i class="fas fa-play"></i>
+	</button>
 </section>
 <section id="promise">
 	<div class="container">

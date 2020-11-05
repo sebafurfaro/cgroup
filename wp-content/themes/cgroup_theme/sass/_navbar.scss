@@ -1,11 +1,11 @@
 .navbar {
-	-webkit-transition:background-color $shortMove;
-	transition:background-color $shortMove;
+	-webkit-transition:background-color $transition-primary;
+	transition:background-color $transition-primary;
 	.contact-online {
 		position: absolute;
 		right:7%;
 		text-transform: uppercase;
-		font-weight: $fBold;
+		font-weight: $bold;
 		letter-spacing: 3px;
 		color:$white;
 		&:hover {
@@ -19,8 +19,8 @@
 			width: 50px;
 			height:2px;
 			background:$feature-color;
-			transition: $shortMove;
-			-webkit-transition: $shortMove
+			transition: $transition-primary;
+			-webkit-transition: $transition-primary
 		}
 		&:hover::after {
 			left:0;
@@ -29,8 +29,8 @@
 	.navbar-brand {
 		.img-fluid {
 			width: 130px;
-			-webkit-transition: width $shortMove;
-			transition: width $shortMove
+			-webkit-transition: width $transition-primary;
+			transition: width $transition-primary
 		}
 	}
 	#menuToggler {
@@ -39,7 +39,7 @@
 		width: $finger;
 		height:$finger;
 		background:transparent;
-		transition: $shortMove;
+		transition: $transition-primary;
 		z-index: 20;
 		&:focus {
 			outline: 0;
@@ -51,8 +51,8 @@
 			height:1px;
 			background:$white;
 			display: block;
-			transition: $shortMove;
-			-webkit-transition: $shortMove;
+			transition: $transition-primary;
+			-webkit-transition: $transition-primary;
 		}
 		.icon-menu:nth-child(1) {
 			top:22%;
@@ -72,7 +72,7 @@
 			.nav-link {
 				text-decoration:none;
 				text-transform: uppercase;
-				font-weight: $fMedium;
+				font-weight: $medium;
 				font-size: 16px;
 				letter-spacing: 3px;
 				color:$white;
@@ -87,8 +87,8 @@
 					left: 20px;
 					bottom: 0;
 					background:$feature-color;
-					transition:$shortMove;
-					-webkit-transition:$shortMove;
+					transition:$transition-primary;
+					-webkit-transition:$transition-primary;
 				}
 				&:hover::after {
 					left:0;
@@ -101,8 +101,8 @@
 
 .open {
 	.icon-menu:nth-child(1) {
-  		transform:rotate(45deg);
-  		transform-origin:0% 50%;
+		transform:rotate(45deg);
+		transform-origin:0% 50%;
 	}
 	.icon-menu:nth-child(2) {
   		opacity:0;
@@ -129,14 +129,14 @@
 	position:fixed;
 	top:0;
 	right:0;
-	width: $w100;
-	height:$h100;
+	width: $w;
+	height:$mh;
 	background-color:$primary-color;
 	.col-12 {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		height: $h100;
+		height: $mh;
 	}
 	.nav-menu {
 		margin:0;
@@ -148,7 +148,7 @@
 			position: relative;
 			.nav-link {
 				text-transform: uppercase;
-				font-weight: $fBold;
+				font-weight: $bold;
 				color:$white;
 				letter-spacing: 3px;
 				margin-bottom:1rem;
@@ -170,7 +170,7 @@
 	}
 	.contact-online {
 		text-transform: uppercase;
-		font-weight: $fBold;
+		font-weight: $bold;
 		color:$white;
 		letter-spacing: 3px;
 		margin-bottom:1rem;

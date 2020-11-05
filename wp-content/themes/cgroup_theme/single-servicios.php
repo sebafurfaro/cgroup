@@ -15,19 +15,13 @@ $grupo1 = get_field( 'grupo-1' );
 $images = get_field( 'slider_small' );
 $sliders = get_field( 'slider_big' );
 ?>
-<section id="header">
-	<img src="<?php echo $header['img_back']; ?>" alt="" class="img-fluid">
-	<div class="overlay"></div>
-	<div class="container">
-		<div class="row">
-			<div class="col-12 text-center">
-				<h2 class="heading my-3"><?php echo $header['heading']; ?></h2>
-				<p><?php echo $header['subheading']; ?></p>
-				<a href="<?php echo $header['url']; ?>" class="btn btn-custom"><?php echo $header['btn_value']; ?></a>
-			</div>
-		</div>
-	</div>
+<section
+	id="header"
+	class="bg-full"
+	style="background-image:url('<?php echo $header['img_back']; ?>);">
+		<div class="overlay"></div>
 </section>
+<div class="rectangle"></div>
 <section id="about-into">
 	<div class="container">
 		<div class="row">

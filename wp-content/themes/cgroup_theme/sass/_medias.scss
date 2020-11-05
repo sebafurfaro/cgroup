@@ -7,4 +7,27 @@
 			left:-20px;
 		}
 	}
+	#employee-row {
+		flex-direction: row;
+		.column-left {
+			width: calc( #{$w} - 15% );
+			flex-direction: row;
+			align-items: center;
+			.short-content {
+				margin-left: 3rem;
+				max-width: calc( #{$w} / 2 );
+			}
+		}
+		&:nth-child(even) {
+			.column-left {
+				order:2;
+			}
+		}
+	}
+	#carouselEmployee {
+		padding-top:75px;
+		.inner-row {
+			padding:0 2rem;
+		}
+	}
 }

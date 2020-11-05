@@ -17,20 +17,29 @@ $images = get_field( 'slider_home' );
 			</iframe>
 		</div>
 	</div>
-	<button id="playModal" type="button" onclick="showModalVideo()">
-		<i class="fas fa-play"></i>
+	<button
+		id="playModal"
+		type="button"
+		onclick="showModalVideo()">
+			<i class="fas fa-play"></i>
 	</button>
 </section>
 <section id="promise">
 	<div class="container">
 		<div class="video-about">
-			<iframe src="https://player.vimeo.com/video/293869854" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+			<iframe
+				src="https://player.vimeo.com/video/293869854"
+				width="640"
+				height="360"
+				frameborder="0"
+				allow="autoplay; fullscreen"
+				allowfullscreen></iframe>
 		</div>
 		<div class="row justify-content-end">
 			<div class="col-12 col-lg-6">
 				<div class="text-about">
-					<h2 class="bold text-uppercase"><?php echo $g1[ 'title' ]; ?></h2>
-					<p class="regular"><?php echo $g1[ 'description' ]; ?></p>
+					<h2 class="h2-title text-uppercase"><?php echo $g1[ 'title' ]; ?></h2>
+					<p class="short-content"><?php echo $g1[ 'description' ]; ?></p>
 				</div>
 			</div>
 		</div>
@@ -50,9 +59,7 @@ $images = get_field( 'slider_home' );
 				while( $serviceHome->have_posts() ) : $serviceHome->the_post();
 			?>
 				<div class="col-12 col-lg-6 mb-3">
-					<a
-						href="<?php the_permalink(); ?>"
-						class="box-img bg-full d-flex align-items-center justify-content-center">
+					<a href="<?php the_permalink(); ?>" class="box-img bg-full d-flex align-items-center justify-content-center">
 						<?php the_post_thumbnail('full', array('css'=>'img-fluid box-img_img')); ?>
 						<h4 class="text-uppercase mb-0"><?php the_title(); ?></h4>
 					</a>
@@ -63,12 +70,12 @@ $images = get_field( 'slider_home' );
 </section>
 <section id="who-home">
 	<div class="container-fluid">
-	<img src="<?php echo $g2[ 'img_left' ];?>" alt="" class="img-fluig img-left">
+	<img src="<?php echo $g2[ 'img_left' ];?>" class="img-fluig img-left">
 		<div class="row justify-content-end">
 			<div class="col-lg-7 col-12 box">
-				<h2 class="regular heading text-uppercase mb-0"><?php echo $g2[ 'title' ];?></h2>
-				<h2 class="bold subheading text-uppercase"><?php echo $g2[ 'subtitle' ]; ?></h2>
-				<p class="description mb-0"><?php echo $g2[ 'description' ]; ?></p>
+				<h2 class="heading text-uppercase mb-0"><?php echo $g2[ 'title' ];?></h2>
+				<h2 class="h2-title text-uppercase"><?php echo $g2[ 'subtitle' ]; ?></h2>
+				<p class="short-content mb-0"><?php echo $g2[ 'description' ]; ?></p>
 				<a href="/nosotros/" class="btn btn-custom text-white"><?php echo $g2[ 'btn_name' ];?></a>
 			</div>
 		</div>

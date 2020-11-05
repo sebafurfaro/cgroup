@@ -1,0 +1,90 @@
+#employee-row {
+	display:flex;
+	flex-direction:column;
+	justify-content: space-between;
+	&:nth-child(odd) {
+		background-color:$white;
+		color:$mate;
+	}
+	.column-left {
+		padding-left:3rem;
+		padding-right:3rem;
+		display: flex;
+	}
+}
+#carouselEmployee {
+	position: relative;
+	width: $w;
+	min-height: $mh;
+	overflow: hidden;
+	.inner-row {
+		position: relative;
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			bottom:0;
+			right:0;
+			left:0;
+			margin: auto;
+			width: $w;
+			height:calc( #{$mh} / 2 );
+			background: $secondary-color;
+			-webkit-box-shadow: $shadow;
+			-moz-box-shadow: $shadow;
+			box-shadow: $shadow;
+			z-index: 1;
+		}
+	}
+	&::before {
+		content: '';
+		display: block;
+		position: absolute;
+		top:0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: $w;
+		height:calc( #{$mh} * .4 );
+		background: $white;
+	}
+	#empleados {
+		position: relative;
+		z-index: 2;
+		padding:1rem;
+		.img-fluid {
+			height: calc( #{$u} * 3 );
+			object-fit: cover;
+			-webkit-box-shadow:$elevation;
+			-moz-box-shadow:$elevation;
+			box-shadow:$elevation;
+		}
+		.h6-title {
+			font-size: 1.125rem;
+			font-weight: $medium;
+			text-transform: uppercase;
+			align-self: flex-start;
+			margin:1rem 0;
+		}
+		p {
+			font-size: 0.875rem;
+			font-weight: $regular;
+			margin-bottom:0;
+		}
+		.swiper-button-next {
+			right:-8px;
+			&::after {
+				font-size: 1.25rem;
+				color:$white;
+			}
+		}
+		.swiper-button-prev {
+			left:-8px;
+			&::after {
+				font-size: 1.25rem;
+				color:$white;
+			}
+
+		}
+	}
+}

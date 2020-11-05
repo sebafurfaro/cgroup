@@ -4,25 +4,29 @@ $secondary-color:#205261;
 $third-color:#36A4AE;
 $feature-color:#F87A3E;
 $white:#ffffff;
-$black:#252525;
+$mate:#252525;
+$shadow:0px 10px 20px 5px rgba(0,0,0,.55);
+$elevation: 0px 0px 10px 5px rgba(0,0,0,.57);
 
 // fonts
 $font-base:'Montserrat', sans-serif;
 $size-base:17px;
 $size-nav:16px;
-$fLight:300;
-$fRegular:400;
-$fMedium:500;
-$fSemiBold:600;
-$fBold:700;
-$fExtraBold:800;
-$fBlack:900;
+$light:300;
+$regular:400;
+$medium:500;
+$semibold:600;
+$bold:700;
+$extrabold:800;
+$black:900;
 
 // sizes
-$w100:100%;
-$h100:100vh;
-$finger:48px;
-$h:100px;
+$w:100%;
+$mh:100vh;
+$finger:50px;
+$u:100px;
 
-// mini transition 
-$shortMove: .4s ease-in-out;
+// mini transition
+$transition-primary: .4s ease-in-out;
+$transition-secondary: .3s ease-out;
+

@@ -117,10 +117,6 @@ $(document).ready(function() {
 		loop:true,
 		slidesPerView:5,
 		spaceBetween:30,
-		pagination: {
-			el: '.swiper-pagination',
-			clickeable:true
-		},
 		navigation: {
 			nextEl: '.swiper-button-next',
 			prevel: '.swiper-button-prev',

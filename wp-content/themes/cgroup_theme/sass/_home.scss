@@ -1,5 +1,5 @@
 #video-home {
-	height:$h100;
+	height:$mh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -15,7 +15,7 @@
 		z-index: 12;
 		i {
 			font-size: calc( #{$size-base} * 2);
-			color:$black;
+			color:$mate;
 		}
 	}
 }
@@ -31,18 +31,12 @@
 		height: 120%;
 		width: 45%;
 	}
-	.text-about {
-		h2 {
-			font-size:54px;
-		}
-	}
-
 }
 
 .box-img {
 	position: relative;
 	overflow:hidden;
-	height:calc( #{$h} * 6 );
+	height:calc( #{$u} * 6 );
 	img {
 		opacity: .8;
 		transition:transform 5s ease-in-out;
@@ -56,7 +50,7 @@
 	}
 	h4 {
 		position: absolute;
-		font-weight: $fBlack;
+		font-weight: $black;
 		color:$white;
 		text-shadow:0px 0px 0px rgba(0,0,0,.23);
 		z-index: 10;
@@ -74,51 +68,20 @@
 		object-fit: cover;
 	}
 	.heading {
-		font-size:23px;
-		line-height: 35px;
-		font-weight: $fMedium;
 		color:$third-color;
-		letter-spacing: 3px;
-	}
-	.subheading {
-		font-size: 28px;
-		line-height: 42px;
-		font-weight: $fBold;
-		color:$white;
-		letter-spacing: 2px;
-		margin:1rem 0 1rem 5rem;
-	}
-	.description {
-		font-size: 17px;
-		line-height: normal;
-		font-weight: $fLight;
-		color:$white;
-	}
-	.btn-custom {
-		margin:1.5rem 0 1rem 5rem;
-		min-width: 217px;
-		transition:transform $shortMove;
-		-webkit-transition:transform $shortMove;
-		&:hover {
-			transform: scale(1.1);
-		}
 	}
 	.box {
 		padding:4rem 0;
 	}
 }
-.btn-custom {
-	background-color:$feature-color;
-	border-radius: 0;
-}
 
 #slider-home {
 	position: relative;
-	min-height: $h100;
+	min-height: $mh;
 	&::before {
 		content:'';
 		display: block;
-		width: $w100;
+		width: $w;
 		height:400px;
 		background-color:$secondary-color;
 		position: absolute;

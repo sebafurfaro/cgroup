@@ -1,13 +1,15 @@
 .navbar {
-	-webkit-transition:background-color $transition-primary;
-	transition:background-color $transition-primary;
+	background:transparent;
 	.contact-online {
 		position: absolute;
+		font-size: 1rem;
 		right:7%;
 		text-transform: uppercase;
 		font-weight: $bold;
 		letter-spacing: 3px;
 		color:$white;
+		transition: font-size .4s ease-in-out;
+		-webkit-transition: font-size .4s ease-in-out;
 		&:hover {
 			text-decoration: none !important;
 		}
@@ -29,18 +31,18 @@
 	.navbar-brand {
 		.img-fluid {
 			width: 130px;
-			-webkit-transition: width $transition-primary;
-			transition: width $transition-primary
+			transition: width .4s ease-in-out;
+			-webkit-transition: width .4s ease-in-out;
 		}
 	}
 	#menuToggler {
-		border:none;
 		position:relative;
 		width: $finger;
 		height:$finger;
 		background:transparent;
+		border:none;
 		transition: $transition-primary;
-		z-index: 20;
+		z-index: 2000;
 		&:focus {
 			outline: 0;
 			box-shadow: none;
@@ -53,6 +55,7 @@
 			display: block;
 			transition: $transition-primary;
 			-webkit-transition: $transition-primary;
+			z-index: 2000;
 		}
 		.icon-menu:nth-child(1) {
 			top:22%;
@@ -78,6 +81,8 @@
 				color:$white;
 				padding:.3rem 1rem;
 				position: relative;
+				transition: all .4s ease-in-out;
+				-webkit-transition: all .4s ease-in-out;
 				&::after {
 					content: '';
 					position: absolute;
@@ -122,16 +127,22 @@
 		#navbarDesk, .contact-online {
 			display: none;
 		}
+		#menuToggler {
+			position: fixed;
+			right: 10px;
+			z-index: 2000;
+		}
 	}
 }
 
 #sidebar-menu {
-	position:fixed;
+	position: fixed;
 	top:0;
 	right:0;
 	width: $w;
 	height:$mh;
 	background-color:$primary-color;
+	z-index: 1000;
 	.col-12 {
 		display: flex;
 		flex-direction: column;
@@ -199,6 +210,25 @@
 		.navbar-brand {
 			.img-fluid {
 				width: 90px;
+			}
+		}
+	}
+}
+.sticky {
+	.navbar {
+		.navbar-brand {
+			.img-fluid {
+				width: 75px;
+			}
+		}
+		.contact-online {
+			font-size: .8rem;
+		}
+		.nav-menu {
+			.menu-item {
+				.nav-link {
+					font-size: .8rem;
+				}
 			}
 		}
 	}

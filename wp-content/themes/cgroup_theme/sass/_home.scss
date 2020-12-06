@@ -3,33 +3,45 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	#playModal {
+	.btn-play {
 		position: relative;
-		width: $finger;
-		height: $finger;
+		width: calc( #{$finger} * 2 );
+		height: calc( #{$finger} * 2 );
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border:none;
+		border:2px solid $mate;
+		border-radius: $radius;
 		background:transparent;
 		z-index: 12;
+		transition: all .4s ease-in-out;
+		-webkit-transition: all .4s ease-in-out;
 		i {
 			font-size: calc( #{$size-base} * 2);
 			color:$mate;
+			margin-left:5px;
+			transition: all .4s ease-in-out;
+			-webkit-transition: all .4s ease-in-out;
+		}
+		&:hover {
+			background:rgba($white, .5);
+			border:2px solid $white;
+			i {
+				color:$primary-color;
+			}
 		}
 	}
 }
 #promise {
 	position: relative;
-	padding:90px 0;
-	background-color:$secondary-color;
+	display: flex;
+	flex-direction: column;
 	.video-about {
-		position: absolute;
-		top: -7px;
-		left:0;
-		max-width: 850px;
-		height: 120%;
-		width: 45%;
+		position: relative;
+		z-index: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 }
 
@@ -38,6 +50,7 @@
 	overflow:hidden;
 	height:calc( #{$u} * 6 );
 	img {
+		object-fit: cover;
 		opacity: .8;
 		transition:transform 5s ease-in-out;
 		-webkit-transition:transform 5s ease-in-out;
@@ -59,22 +72,25 @@
 
 #who-home {
 	position: relative;
-	background-color:$secondary-color;
-	overflow: hidden;
-	.img-left {
-		position: absolute;
-		left:0;
-		max-width:520px;
-		object-fit: cover;
+	display: flex;
+	flex-direction: column;
+	.img-left, .container {
+		position: relative;
+		z-index: 1;
 	}
 	.heading {
 		color:$third-color;
-	}
-	.box {
-		padding:4rem 0;
+		letter-spacing: 5px;
 	}
 }
-
+@media (max-width: 767.98px) {
+	#who-home {
+		.img-left {
+			object-fit: cover;
+			margin-bottom:1rem;
+		}
+	}
+}
 #slider-home {
 	position: relative;
 	min-height: $mh;
@@ -94,6 +110,24 @@
 			&::after {
 				color:$white;
 			}
+		}
+	}
+}
+@media (max-width:767.98px) {
+	#slider-home {
+		margin-top:3rem;
+		#sliderHome {
+			height:$mh;
+			.swiper-slide {
+				height:$mh;
+				.img-fluid {
+					height:$mh;
+					object-fit: cover;
+				}
+			}
+		}
+		.button-slider {
+			display: none;
 		}
 	}
 }

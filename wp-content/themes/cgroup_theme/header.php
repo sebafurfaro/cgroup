@@ -1,17 +1,11 @@
 <?php
 /**
  * The header for our theme
- *
  * Displays all of the <head> section and everything up till <div id="content">
- *
  * @package UnderStrap
  */
-
 // Exit if accessed directly.
-defined( 'ABSPATH' ) || exit;
-
-$container = get_theme_mod( 'understrap_container_type' );
-?>
+defined( 'ABSPATH' ) || exit; ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -20,16 +14,24 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/swiper-bundle.min.css">
-	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/style.css">
 </head>
 
 <body <?php body_class(); ?> <?php understrap_body_attributes(); ?>>
+<div id="spinOff">
+	<img
+		src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/logo_cgroup.svg"
+		alt="CGroup"
+		class="img-fluid">
+	<div class="loader"></div>
+</div>
 <?php do_action( 'wp_body_open' ); ?>
 	<nav id="mainNavbar" class="navbar fixed-top navbar-dark">
 		<a
-			href="/"
+			href="<?php echo get_site_url(); ?>"
 			class="navbar-brand mb-0">
 				<img
 					src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/logo_cgroup.svg"

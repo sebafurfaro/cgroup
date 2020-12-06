@@ -19,13 +19,30 @@ $boxX = get_field( 'grupo_large' );
 	<div id="employee-row" class="align-items-center p-2">
 		<div class="column-left">
 			<div class="row-heading">
-				<h2 class="h2-title text-uppercase"><?php echo $groupRow['name']; ?></h2>
-				<h6 class="h6-title"><?php echo $groupRow['studies']; ?></h6>
+				<h2
+					class="h2-title text-uppercase"
+					data-aos="zoom-in-up"
+					data-aos-offset="150"
+					data-aos-easing="ease-out-cubic"><?php echo $groupRow['name']; ?></h2>
+				<h6
+					class="h6-title"
+					data-aos="zoom-in-up"
+					data-aos-offset="150"
+					data-aos-easing="ease-out-cubic"><?php echo $groupRow['studies']; ?></h6>
 			</div>
-			<p class="short-content"><?php echo $groupRow['description']; ?></p>
+			<p
+				class="short-content"
+				data-aos="zoom-in-up"
+				data-aos-offset="150"
+				data-aos-easing="ease-out-cubic"><?php echo $groupRow['description']; ?></p>
 		</div>
 		<div class="column-right">
-			<img src="<?php echo $groupRow['employee_img']; ?>" alt="" class="img-fluid">
+			<img
+				src="<?php echo $groupRow['employee_img']; ?>"
+				class="img-fluid"
+				data-aos="zoom-in-up"
+				data-aos-offset="150"
+				data-aos-easing="ease-out-cubic">
 		</div>
 	</div>
 	<?php endwhile; ?>

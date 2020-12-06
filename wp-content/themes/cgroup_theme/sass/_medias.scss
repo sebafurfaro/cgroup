@@ -1,3 +1,4 @@
+//home
 @media (min-width:768px) {
 	#slider-home {
 		.swiper-button-next {
@@ -28,6 +29,139 @@
 		padding-top:75px;
 		.inner-row {
 			padding:0 2rem;
+		}
+	}
+	
+	#promise {
+		flex-direction: row;
+		align-items: center;
+		overflow: hidden;
+		.video-about {
+			width: 640px;
+			height: 640px;
+			background-color: $white;
+		}
+	}
+	#who-home {
+		flex-direction: row;
+		align-items: center;
+		overflow: hidden;
+		.container {
+			display: flex;
+			align-items: center;
+			.h2-title,
+			.btn-custom {
+				margin-left: 2.5rem;
+			}
+		}
+	}
+	.shape {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		width: $w;
+		height: calc( #{$mh} - 25vh );
+		background-color: $secondary-color;
+		z-index: 0;
+	}
+	.box {
+		padding: 4rem;
+	}
+// Servicios
+	#about-intro {
+		padding-top:100px;
+	}
+	#about-story {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		#about-photos {
+			position: relative;
+			width: 40%;
+			.shape-2 {
+				position: absolute;
+				bottom:0;
+				left:0;
+				width: $w;
+				height:calc( #{$u} * 2 + 50px );
+				background-color: $secondary-color;
+			}
+			#sliderAbout {
+				margin-left: 2rem;
+				margin-bottom:2rem;
+				.swiper-slide {
+					.img-fluid {
+						width: 400px;
+						object-fit: cover;
+					}
+				}
+				.swiper-pagination {
+					left:auto;
+					right:5%;
+					bottom:0;
+					top:50%;
+					margin: auto;
+					width: calc( #{$u} - 40px );
+					height: $finger;
+					color:$third-color;
+					font-size: 0.9375rem;
+					.swiper-pagination-current {
+						font-size: 1.75rem;
+						font-weight: $bold;
+						color:$white !important;
+					}
+					.swiper-pagination-total {
+						font-size:0.9375rem;
+						font-weight: $light;
+						color:$third-color;
+					}
+				}
+				.swiper-button-next {
+					right:8%;
+					top:65%;
+					transform:rotate(-90deg);
+					-webkit-transform:rotate(-90deg);
+					&::after {
+						font-size: 12px;
+						font-weight: $bold;
+						color:$white;
+					}
+				}
+				.swiper-button-prev {
+					left:auto;
+					right:8%;
+					top:auto;
+					bottom:10%;
+					transform:rotate(-90deg);
+					-webkit-transform:rotate(-90deg);
+					&::after {
+						font-size: 12px;
+						font-weight: $bold;
+						color:$white;
+					}
+				}
+			}
+		}
+		#about-content {
+			width: 50%;
+		}
+		.about-photos {
+			position: relative;
+		}
+	}
+	#bigSlider {
+		#sliderAbout2 {
+			max-height: 600px;
+		}
+	}
+
+// footer
+	footer {
+		.main-footer {
+			width: $w;
+			flex-direction: row;
+			justify-content: space-between;
 		}
 	}
 }

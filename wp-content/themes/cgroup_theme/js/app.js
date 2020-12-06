@@ -2,6 +2,17 @@ const body = document.getElementsByTagName('body')[0];
 const nav = document.querySelector('#mainNavbar');
 const btnMenu = document.querySelector('#menuToggler');
 
+$(window).scroll(()=>{
+	var navbar = $('.navbar');
+	if( $(this).scrollTop() > 300 ) {
+		$('body').addClass('sticky');
+		navbar.css('background','#246674');
+	} else {
+		$('body').removeClass('sticky');
+		navbar.css('background','transparent');
+	}
+});
+
 const tl = new TimelineLite({paused:true, reversed:true});
 
 if( screen.width >= 768 ) {
@@ -53,28 +64,6 @@ function hideModalVideo() {
 		{right:'-100%', autoAlpha:0}
 	)
 }
-
-
-
-// change background navbar on scroll
-var scrollpos = window.scrollY;
-
-function add_back() {
-	nav.classList.add('bg-color');
-}
-function remove_back() {
-	nav.classList.remove('bg-color');
-}
-window.addEventListener('scroll', () => {
-	scrollpos = window.scrollY;
-	if( scrollpos > 200 ) {
-		add_back();
-	} else {
-		remove_back();
-	}
-	console.log(scrollpos);
-});
-
 /**
  *
  *	Sliders
@@ -115,11 +104,49 @@ $(document).ready(function() {
 	// slider nosotros multislides
 	var empleados = new Swiper('#empleados', {
 		loop:true,
-		slidesPerView:5,
+		slidesPerView:1,
 		spaceBetween:30,
 		navigation: {
 			nextEl: '.swiper-button-next',
 			prevel: '.swiper-button-prev',
 		},
+		breakpoints: {
+			640: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+        },
+        768: {
+				slidesPerView: 4,
+				spaceBetween: 30,
+        },
+        1024: {
+				slidesPerView: 5,
+				spaceBetween: 30,
+        },
+		},
 	});
+
+	//stop video on hidden modal
+	$('#videopopup').on('hidden.bs.modal', (e)=>{
+   	var $iframes = $(e.target).find('iframe');
+  		$iframes.each(function(index, iframe){
+  			$(iframe).attr('src', $(iframe).attr('src'));
+		})
+	});
+});
+
+// Inizializate AOS function & add attribute animate into variable content
+AOS.init({
+	easing: 'ease-out-back'
+});
+
+//remove fixed-top on mobile device
+if( window.innerWidth < 768 ) {
+	
+}
+// stop scroll when menu is open
+$(document).ready(()=>{
+	setTimeout(() => {
+		$('#spinOff').css('display','none');
+	}, 3000);
 });

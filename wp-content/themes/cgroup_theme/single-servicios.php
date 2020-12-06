@@ -22,35 +22,58 @@ $sliders = get_field( 'slider_big' );
 		<div class="overlay"></div>
 </section>
 <div class="rectangle"></div>
-<section id="about-into">
+<section id="about-intro">
 	<div class="container">
 		<div class="row">
-			<div class="col-12">
-				<h2 class="text-uppercase"><?php echo $grupo1['title']; ?></h2>
-				<h6><?php echo $grupo1['subtitle']; ?></h6>
+			<div class="col-12 col-md-6">
+				<h2
+					class="h2-title text-uppercase"
+					data-aos="slide-right"
+					data-aos-offset="0"
+					data-aos-easing="ease-out-cubic"><?php echo $grupo1['title']; ?></h2>
+			</div>
+			<div class="col-12 col-md-6">
+				<h6
+					data-aos="fade-left"
+					data-aos-offset="0"
+					data-aos-easing="ease-out-cubic"><?php echo $grupo1['subtitle']; ?></h6>
 			</div>
 		</div>
 	</div>
 </section>
 <section id="about-story">
 	<?php if( $images ): ?>
-	<div class="about-photos">
-		<div id="sliderAbout" class="swiper-container" style="height:500px;">
-			<div class="swiper-wrapper">
-				<?php foreach( $images as $image ): ?>
-				<div class="swiper-slide">
-					<img src="<?php echo esc_url($image); ?>" alt="" class="img-fluid" style="height:500px; object-fit:cover;">
+	<div id="about-photos">
+		<div class="shape-2"></div>
+		<div
+			id="sliderAbout"
+			class="swiper-container"
+			style="height:400px;"
+			data-aos="zoom-in-up"
+			data-aos-offset="150"
+			data-aos-easing="ease-out-cubic">
+				<div class="swiper-wrapper">
+					<?php foreach( $images as $image ): ?>
+					<div class="swiper-slide">
+						<img src="<?php echo esc_url($image); ?>" alt="" class="img-fluid" style="height:400px; object-fit:cover;">
+					</div>
+					<?php endforeach; ?>
 				</div>
-				<?php endforeach; ?>
-			</div>
-			<div class="swiper-pagination"></div>
+				<div class="swiper-button-next button-slider"></div>
+				<div class="swiper-pagination"></div>
+				<div class="swiper-button-prev button-slider"></div>
 		</div>
 	</div>
 	<?php endif; ?>
-	<div class="container">
-		<div class="row">
-			<div class="col-12 col-lg-6">
-				<p><?php echo $grupo1['description']; ?></p>
+	<div id="about-content">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<p
+						data-aos="zoom-in-up"
+						data-aos-offset="150"
+						data-aos-easing="ease-out-cubic"><?php echo $grupo1['description']; ?></p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -62,9 +85,17 @@ $sliders = get_field( 'slider_big' );
 			<?php while( have_rows('box_content') ): the_row();
 					$box = get_sub_field('box');
 			?>
-			<div class="col-12 col-lg-6">
-				<h2><?php echo $box['title']; ?></h2>
-				<p><?php echo $box['description']; ?></p>
+			<div class="col-12 col-lg-6 mb-4 px-2">
+				<h2
+					class="text-uppercase"
+					data-aos="zoom-in-up"
+					data-aos-offset="150"
+					data-aos-easing="ease-out-cubic"><?php echo $box['title']; ?></h2>
+				<p
+					data-aos="zoom-in-up"
+					data-aos-offset="150"
+					data-aos-delay="25"
+					data-aos-easing="ease-out-cubic"><?php echo $box['description']; ?></p>
 			</div>
 			<?php endwhile; ?>
 		</div>
@@ -75,8 +106,8 @@ $sliders = get_field( 'slider_big' );
 	<?php if($sliders): ?>
 	<div class="container">
 		<div class="row d-flex justify-content-center align-items-center">
-			<div class="col-12 col-lg-8">
-				<div id="sliderAbout2" class="swiper-container" style="max-height:600px;">
+			<div class="col-12">
+				<div id="sliderAbout2" class="swiper-container">
 					<div class="swiper-wrapper">
 						<?php foreach($sliders as $slider): ?>
 						<div class="swiper-slide">
@@ -84,7 +115,8 @@ $sliders = get_field( 'slider_big' );
 						</div>
 						<?php endforeach; ?>
 					</div>
-					<div class="swiper-navigation"></div>
+					<div class="swiper-button-next button-slider"></div>
+					<div class="swiper-button-prev button-slider"></div>
 				</div>
 			</div>
 		</div>

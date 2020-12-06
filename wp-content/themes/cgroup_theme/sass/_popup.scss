@@ -1,38 +1,43 @@
-.popup {
-	position:fixed;
-	top:0;
-	right:-100%;
-	width:$w;
-	height:$mh;
-	background:rgba(0,0,0,.5);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction:column;
-	z-index: 2000;
-	.hidePopup {
-		position: relative;
-		width: $finger;
-		height:$finger;
-		align-self:flex-end;
-		background:transparent;
+#videopopup {
+	padding-right: 0 !important;
+	.modal-dialog {
 		display: flex;
 		align-items: center;
-		justify-content: center;
-		border:none;
-		&::after, &::before {
-			content:'';
-			display: block;
-			position: absolute;
-			width: 3px;
-			height: calc( #{$finger} - 18px );
-			background:$white;
-		}
-		&::after {
-			transform:rotate(45deg);
-		}
-		&::before {
-			transform:rotate(-45deg);
+		min-height: $mh;
+		max-width: 900px;
+		.modal-content {
+			background: transparent;
+			border:none;
+			.modal-header {
+				border-bottom:none;
+				.close {
+					position: relative;
+					opacity: 1;
+					width: $finger;
+					height:$finger;
+					align-self:flex-end;
+					background:transparent;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					border:none;
+					&::after, &::before {
+						content:'';
+						display: block;
+						position: absolute;
+						width: 3px;
+						height: calc( #{$finger} - 18px );
+						background:$white;
+					}
+					&::after {
+						transform:rotate(45deg);
+					}
+					&::before {
+						transform:rotate(-45deg);
+					}
+				}
+			}
 		}
 	}
+
 }

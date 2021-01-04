@@ -9,7 +9,7 @@ $images = get_field( 'slider_home' );
 	<div id="videoBg">
 		<div class="video-foreground">
 			<iframe
-				src="https://player.vimeo.com/video/374908207?background=1&autoplay=1&loop=1&byline=0&title=0"
+				src="https://player.vimeo.com/video/491191071?background=1&autoplay=1&loop=1&byline=0&title=0"
 				frameborder="0"
 				allow="autoplay; fullscreen"
 				allowfullscreen
@@ -17,24 +17,25 @@ $images = get_field( 'slider_home' );
 			</iframe>
 		</div>
 	</div>
-	<button
-		class="btn-play"
-		type="button"
-		data-toggle="modal"
-		data-target="#videopopup">
-			<i class="fas fa-play"></i>
-	</button>
 </section>
 <section id="promise">
 	<div class="shape"></div>
-	<div class="video-about">
+	<div class="video-about" style="background-image:url( '<?php echo $g1['poster_video']; ?>' );">
+		<button
+			class="btn-play"
+			type="button"
+			data-toggle="modal"
+			data-target="#videopopup">
+				<i class="fas fa-play"></i>
+		</button>
 		<iframe
-			src="https://player.vimeo.com/video/293869854"
+			src="https://player.vimeo.com/video/491190361"
 			width="640"
 			height="360"
 			frameborder="0"
 			allow="autoplay; fullscreen"
 			allowfullscreen
+			class="d-none"
 			data-aos="fade-right"
 			data-aos-offset="300"
 			data-aos-easing="ease-in-out"></iframe>

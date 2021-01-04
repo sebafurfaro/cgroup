@@ -11,6 +11,8 @@ defined( 'ABSPATH' ) || exit;
 // Disable Gutenberg Editor
 add_filter( 'use_block_editor_for_post', '__return_false' );
 
+//hide ACF for all users
+//add_filter('acf/settings/show_admin', '__return_false');
 
 // Options Page
 add_action('acf/init', 'my_acf_op_init');

@@ -11,8 +11,8 @@
 				<div class="modal-body">
 					<div class="embed-responsive embed-responsive-16by9">
 						<iframe
-							src="https://player.vimeo.com/video/403868666"
-							class="embed-responsive-item yvideo"
+							src="https://player.vimeo.com/video/491191071"
+							class="embed-responsive-item yvideo d-none"
 							id="videoOnModal"
 							width="640"
 							height="360"
@@ -20,6 +20,15 @@
 							allow="autoplay; fullscreen"
 							allowfullscreen>
 						</iframe>
+						<iframe
+							src="https://player.vimeo.com/video/491190361"
+							width="640"
+							height="360"
+							frameborder="0"
+							allow="autoplay; fullscreen"
+							allowfullscreen
+							id="videoOnModal"
+							class="embed-responsive-item yvideo"></iframe>
 					</div>
 				</div>
 			</div>

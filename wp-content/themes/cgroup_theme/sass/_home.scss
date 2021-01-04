@@ -3,34 +3,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	.btn-play {
-		position: relative;
-		width: calc( #{$finger} * 2 );
-		height: calc( #{$finger} * 2 );
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		border:2px solid $mate;
-		border-radius: $radius;
-		background:transparent;
-		z-index: 12;
-		transition: all .4s ease-in-out;
-		-webkit-transition: all .4s ease-in-out;
-		i {
-			font-size: calc( #{$size-base} * 2);
-			color:$mate;
-			margin-left:5px;
-			transition: all .4s ease-in-out;
-			-webkit-transition: all .4s ease-in-out;
-		}
-		&:hover {
-			background:rgba($white, .5);
-			border:2px solid $white;
-			i {
-				color:$primary-color;
-			}
-		}
-	}
+	
 }
 #promise {
 	position: relative;
@@ -42,6 +15,38 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		width: calc( #{$u} * 4 );
+		background-position:center center;
+		background-size:cover;
+		background-repeat: no-repeat;
+		.btn-play {
+			position: relative;
+			width: calc( #{$finger} * 2 );
+			height: calc( #{$finger} * 2 );
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border:2px solid $mate;
+			border-radius: $radius;
+			background:transparent;
+			z-index: 12;
+			transition: all .4s ease-in-out;
+			-webkit-transition: all .4s ease-in-out;
+			i {
+				font-size: calc( #{$size-base} * 2);
+				color:$mate;
+				margin-left:5px;
+				transition: all .4s ease-in-out;
+				-webkit-transition: all .4s ease-in-out;
+			}
+			&:hover {
+				background:rgba($white, .5);
+				border:2px solid $white;
+				i {
+					color:$primary-color;
+				}
+			}
+		}
 	}
 }
 

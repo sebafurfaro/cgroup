@@ -1,4 +1,5 @@
 <?php
+define('WP_AUTO_UPDATE_CORE', 'minor');// This setting is required to make sure that WordPress updates can be properly managed in WordPress Toolkit. Remove this line if this WordPress website is not managed by WordPress Toolkit anymore.
 /**
  * Configuración básica de WordPress.
  *
@@ -16,16 +17,16 @@
 
 // ** Ajustes de MySQL. Solicita estos datos a tu proveedor de alojamiento web. ** //
 /** El nombre de tu base de datos de WordPress */
-define( 'DB_NAME', 'furfrilo' );
+define( 'DB_NAME', "cgroup_local" );
 
 /** Tu nombre de usuario de MySQL */
-define( 'DB_USER', 'furfrilo_user' );
+define( 'DB_USER', "cgroup_user" );
 
 /** Tu contraseña de MySQL */
-define( 'DB_PASSWORD', 'mv2fGIsNJs39cKf7' );
+define( 'DB_PASSWORD', "" );
 
 /** Host de MySQL (es muy probable que no necesites cambiarlo) */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', "localhost" );
 
 /** Codificación de caracteres para la base de datos. */
 define( 'DB_CHARSET', 'utf8mb4' );

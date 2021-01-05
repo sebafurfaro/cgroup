@@ -31,7 +31,7 @@ $boxX = get_field( 'grupo_large' );
 					data-aos-easing="ease-out-cubic"><?php echo $groupRow['studies']; ?></h6>
 			</div>
 			<p
-				class="short-content"
+				class="short-content mb-0"
 				data-aos="zoom-in-up"
 				data-aos-offset="150"
 				data-aos-easing="ease-out-cubic"><?php echo $groupRow['description']; ?></p>

@@ -121,8 +121,8 @@ $images = get_field( 'slider_home' );
 					href="/nosotros/"
 					class="btn btn-custom text-white"
 					data-aos="zoom-in-up"
-					data-aos-offset="150"
-					data-aos-delay="25"
+					data-aos-offset="50"
+					data-aos-delay="20"
 					data-aos-easing="ease-out-cubic"><?php echo $g2[ 'btn_name' ];?></a>
 			</div>
 		</div>
@@ -132,7 +132,7 @@ $images = get_field( 'slider_home' );
 <section id="slider-home" class="d-flex align-items-center justify-content-center">
 	<div class="container">
 		<div class="row d-flex align-items-center justify-content-center">
-			<div class="col-12 col-lg-10">
+			<div class="col-12">
 				<div id="sliderHome" class="swiper-container">
 					<div class="swiper-wrapper">
 						<?php foreach( $images as $image ): ?>

@@ -24,6 +24,11 @@
 				order:2;
 			}
 		}
+		.img-fluid {
+			width: 550px;
+			height: 450px;
+			object-fit: cover;
+		}
 	}
 	#carouselEmployee {
 		padding-top:75px;
@@ -37,7 +42,7 @@
 		align-items: center;
 		overflow: hidden;
 		.video-about {
-			width: 640px;
+			width: 940px;
 			height: 640px;
 			background-color: $white;
 		}
@@ -54,6 +59,11 @@
 				margin-left: 2.5rem;
 			}
 		}
+		.img-left {
+			width: 640px;
+			height:640px;
+			object-fit: cover;
+		}
 	}
 	.shape {
 		position: absolute;
@@ -67,6 +77,15 @@
 	}
 	.box {
 		padding: 4rem;
+	}
+	#sliderHome {
+		.swiper-slide {
+			.img-fluid {
+				width: $w;
+				height:calc( #{$u} * 5);
+				object-fit: cover;
+			}
+		}
 	}
 // Servicios
 	#about-intro {
@@ -162,6 +181,46 @@
 			width: $w;
 			flex-direction: row;
 			justify-content: space-between;
+		}
+	}
+}
+
+@media (min-width:1440px) {
+	.shape {
+		height: calc( #{$mh} - 45vh );
+	}
+	#promise {
+		.video-about {
+			height: 940px;
+		}
+	}
+	#who-home {
+		.img-left {
+			width: 940px;
+			height: 940px;
+		}
+	}
+	.box-img {
+		height:calc( #{$u} * 9 );
+	}
+	#slider-home {
+		#sliderHome {
+			height: 800px;
+			.swiper-slide {
+				.img-fluid {
+					height: 800px;
+				}
+			}
+		}
+	}
+	// nosotros
+	#header {
+		height: 80vh;
+	}
+	#employee-row {
+		.img-fluid {
+			width: 650px;
+			height: 650px;
 		}
 	}
 }

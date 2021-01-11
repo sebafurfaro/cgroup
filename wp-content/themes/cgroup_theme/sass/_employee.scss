@@ -72,9 +72,11 @@
 			font-weight: $medium;
 			text-transform: uppercase;
 			align-self: flex-start;
+		}
+		h6 {
 			margin:1rem 0;
 		}
-		p {
+		a {
 			font-size: 0.875rem;
 			font-weight: $regular;
 			margin-bottom:0;

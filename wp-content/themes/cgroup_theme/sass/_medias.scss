@@ -233,5 +233,11 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		#empleados {
+			.img-fluid {
+				height: calc( #{$u} * 4.5 );
+				margin-bottom: 1rem;
+			}
+		}
 	}
 }

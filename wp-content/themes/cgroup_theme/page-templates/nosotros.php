@@ -58,17 +58,21 @@ $boxX = get_field( 'grupo_large' );
 							$args = array(
 								'post_type'			=> array('employee'),
 								'post_status'		=> array('publish'),
+								'category_name'		=> 'empleados',
 								'nopaging'			=> true
 							);
 
 							$newQuery = new WP_Query($args);
 
-						while( $newQuery->have_posts() ) : $newQuery->the_post();
+							while( $newQuery->have_posts() ) : $newQuery->the_post();
+
+							$datosExtra = the_field( 'datos_extra' );
 						?>
 							<div class="swiper-slide d-flex flex-column align-items-center">
 								<?php the_post_thumbnail( 'full', array('class'=>'img-fluid') ); ?>
 								<h6 class="h6-title"><?php the_title(); ?></h6>
-								<?php echo content(15); ?>
+								<h6><?php echo $datosExtra[ 'posicion' ]; ?></h6>
+								<a href="mailto:"<?php echo $datosExtra[ 'correo' ]; ?>"><?php echo $datosExtra[ 'correo' ]; ?></a>
 							</div>
 						<?php endwhile; ?>
 					</div>

@@ -18,8 +18,7 @@
 			<div class="swiper-slide d-flex flex-column align-items-center">
 				<?php the_post_thumbnail( 'full', array('class'=>'img-fluid') ); ?>
 				<h5><?php the_title(); ?></h5>
-				<h6><?php echo $datosExtra[ 'posicion' ]; ?></h6>
-				<a href="mailto:"<?php echo $datosExtra[ 'correo' ]; ?>"><?php echo $datosExtra[ 'correo' ]; ?></a>
+				
 			</div>
 		<?php endwhile; ?>
 	</div>

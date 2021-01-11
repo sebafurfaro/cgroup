@@ -3,6 +3,7 @@ get_header();
 
 $header = get_field( 'header' );
 $boxX = get_field( 'grupo_large' );
+$datosExtra = the_field( 'datos_extra' );
 ?>
 <section
 	id="header"
@@ -65,8 +66,6 @@ $boxX = get_field( 'grupo_large' );
 							$newQuery = new WP_Query($args);
 
 							while( $newQuery->have_posts() ) : $newQuery->the_post();
-
-							$datosExtra = the_field( 'datos_extra' );
 						?>
 							<div class="swiper-slide d-flex flex-column align-items-center">
 								<?php the_post_thumbnail( 'full', array('class'=>'img-fluid') ); ?>

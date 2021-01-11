@@ -19,7 +19,7 @@ defined( 'ABSPATH' ) || exit; ?>
 				<ul class="main-footer d-flex align-items-center">
 					<li class="text-white mx-2">Isidora Goyenechea  3120,  Las Condes,  Piso 17</li>
 					<li class="text-white mx-2">+56 2 2928 9630</li>
-					<li class="text-white mx-2">hola@cgroup.cl</li>
+					<li class="text-white mx-2"><a href="mailto:hola@cgroup.cl">hola@cgroup.cl</a></li>
 				</ul>
 			</div>
 		</div>

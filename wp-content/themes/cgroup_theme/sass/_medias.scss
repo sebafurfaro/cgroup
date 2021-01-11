@@ -181,6 +181,11 @@
 			width: $w;
 			flex-direction: row;
 			justify-content: space-between;
+			li:nth-child(2) {
+				a {
+					pointer-events: none;
+				}
+			}
 		}
 	}
 }

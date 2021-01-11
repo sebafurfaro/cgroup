@@ -17,7 +17,7 @@ defined( 'ABSPATH' ) || exit; ?>
 		<div class="row">
 			<div class="col-12">
 				<ul class="main-footer d-flex align-items-center">
-					<li class="text-white mx-2"><a class="text-white" href="https://goo.gl/maps/sD5ik3eqrharQ6hR8">Isidora Goyenechea  3120,  Las Condes,  Piso 17</a></li>
+					<li class="text-white mx-2"><a class="text-white" href="https://goo.gl/maps/sD5ik3eqrharQ6hR8" target="_blank">Isidora Goyenechea  3120,  Las Condes,  Piso 17</a></li>
 					<li class="text-white mx-2"><a class="text-white" href="tel:+56229289630">+56 2 2928 9630</a></li>
 					<li class="text-white mx-2"><a class="text-white" href="mailto:hola@cgroup.cl">hola@cgroup.cl</a></li>
 				</ul>

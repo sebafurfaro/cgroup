@@ -6,7 +6,7 @@
 				'post_status'		=> array('publish'),
 				'category_name'		=> 'empleados',
 				'nopaging'			=> true,
-				'show_posts'		=> 6
+				'showposts'		=> 6
 			);
 
 			$newQuery = new WP_Query($args);

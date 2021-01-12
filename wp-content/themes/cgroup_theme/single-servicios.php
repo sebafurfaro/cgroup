@@ -19,7 +19,7 @@ $sliders = get_field( 'slider_big' );
 	id="header"
 	class="bg-full"
 	style="background-image:url('<?php echo $header['img_back']; ?>);">
-		<div class="overlay"></div>
+		<div class="overlay d-none"></div>
 </section>
 <div class="rectangle"></div>
 <section id="about-intro">

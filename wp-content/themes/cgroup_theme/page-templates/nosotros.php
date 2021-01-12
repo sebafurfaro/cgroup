@@ -72,7 +72,7 @@ $datosExtra = the_field( 'datos_extra' );
 						?>
 							<div class="swiper-slide d-flex flex-column align-items-center">
 								<?php the_post_thumbnail( 'full', array('class'=>'img-fluid') ); ?>
-								<h5 class="h6-title mb-0"><?php the_title(); ?></h5>
+								<h5 class="h6-title mb-0 mt-2"><?php the_title(); ?></h5>
 								<h6><?php echo $datosExtra[ 'posicion' ]; ?></h6>
 								<a href="mailto:"<?php echo $datosExtra[ 'correo' ]; ?>"><?php echo $datosExtra[ 'correo' ]; ?></a>
 							</div>

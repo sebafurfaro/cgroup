@@ -72,3 +72,7 @@
 	height:calc( #{$u} + 80px );
 	background-color: $secondary-color;
 }
+.swiper-button-next:after, .swiper-button-prev:after {
+	font-size: 2rem;
+	color:$white;
+}

@@ -8,6 +8,8 @@
 		font-weight: $bold;
 		letter-spacing: 3px;
 		color:$white;
+		text-shadow: $tShadow;
+		-webkit-text-shadow: $tShadow;
 		transition: font-size .4s ease-in-out;
 		-webkit-transition: font-size .4s ease-in-out;
 		&:hover {
@@ -81,6 +83,8 @@
 				color:$white;
 				padding:.3rem 1rem;
 				position: relative;
+				text-shadow: $tShadow;
+				-webkit-text-shadow: $tShadow;
 				transition: all .4s ease-in-out;
 				-webkit-transition: all .4s ease-in-out;
 				&::after {

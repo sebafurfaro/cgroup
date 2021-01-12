@@ -34,6 +34,8 @@
 		padding-top:75px;
 		.inner-row {
 			padding:0 2rem;
+			transform: translateY(-20%);
+			-webkit-transform: translateY(-20%);
 		}
 	}
 	
@@ -174,7 +176,10 @@
 			max-height: 600px;
 		}
 	}
-
+	#boxes {
+		display: flex;
+		align-items: center;
+	}
 // footer
 	footer {
 		.main-footer {
@@ -234,10 +239,66 @@
 		align-items: center;
 		justify-content: center;
 		#empleados {
+			transform: translateY(-10%);
+			-webkit-transform: translateY(-20%);
 			.img-fluid {
 				height: calc( #{$u} * 4.5 );
 				margin-bottom: 1rem;
 			}
+		}
+	}
+	#bigSlider {
+		min-height: auto;
+	}
+	#boxes {
+		min-height: 80vh;
+	}
+}
+@media (min-width:1600px) {
+	#carouselEmployee {
+		#empleados {
+			.h6-title {
+				font-size: 1rem;
+			}
+			h6,a {
+				font-size: .85rem;
+			}
+		}
+	}
+	#about-story {
+		#about-photos {
+			#sliderAbout {
+				.swiper-slide {
+					.img-fluid {
+						width: 600px;
+					}
+				}
+			}
+		}
+	}
+	#about-content {
+		font-size: 1.5rem;
+		width: calc( #{$w} - 10% );
+	}
+}
+
+@media (max-width:550px) {
+	.video-about {
+		min-height: calc( #{$mh} - 30vh );
+		margin-top: 3rem;
+	}
+	#carouselEmployee {
+		#empleados {
+			.img-fluid {
+				height: calc( #{$u} * 4.5 );
+			}
+			.h6-title {
+				font-size: 1.2rem;
+			}
+			h6,a {
+				font-size: 1rem;
+			}
+
 		}
 	}
 }

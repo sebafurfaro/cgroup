@@ -54,6 +54,8 @@
 	overflow:hidden;
 	height:calc( #{$u} * 6 );
 	img {
+		width: $w;
+		height: $w;
 		object-fit: cover;
 		opacity: .8;
 		transition:transform 5s ease-in-out;

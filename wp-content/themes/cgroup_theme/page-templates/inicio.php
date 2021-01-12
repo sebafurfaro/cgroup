@@ -80,7 +80,7 @@ $images = get_field( 'slider_home' );
 						data-aos="zoom-in-up"
 						data-aos-offset="300"
 						data-aos-easing="ease-in-sine">
-							<?php the_post_thumbnail('full', array('css'=>'img-fluid box-img_img')); ?>
+							<?php the_post_thumbnail('full', array('class'=>'img-fluid box-img_img')); ?>
 							<h4 class="text-uppercase mb-0"><?php the_title(); ?></h4>
 					</a>
 				</div>
